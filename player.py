@@ -1,8 +1,6 @@
-import pygame 
+import pygame  # type: ignore
 from constants import *
 from circleshape import *
-from main import *
-
 
 class Player(CircleShape):
     def __init__(self, x, y):
