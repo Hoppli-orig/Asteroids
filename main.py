@@ -42,6 +42,12 @@ def main():
                 print("Game over!")
                 return
             
+        for asteroid in asteroids:
+            for shot in shots:
+                if CircleShape.collition_detection(asteroid, shot):
+                    shot.kill()
+                    asteroid.kill()
+            
 
         screen.fill("black")
         
